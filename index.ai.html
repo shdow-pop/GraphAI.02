@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مساعد الرياضيات الذكي - دردشة</title>
+
+  <!-- مكتبات خارجية -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+  <!-- رابط ملف CSS -->
+  <link rel="stylesheet" href="style.ai.css" />
+</head>
+
+<body>
+  <div class="chat-container" role="main" aria-label="مساعد الرياضيات الذكي">
+    <div class="chat-header" aria-live="polite">مساعد الرياضيات الذكي</div>
+    <div class="chat-box" id="chat-box" aria-live="polite" aria-relevant="additions"></div>
+    <form id="chat-form" aria-label="نموذج الدردشة">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="اكتب معادلتك أو سؤالك..."
+        autocomplete="off"
+        aria-label="حقل إدخال النص"
+        required
+      />
+      <button type="submit" aria-label="إرسال الرسالة">إرسال</button>
+    </form>
+  </div>
+
+  <!-- رابط ملف JS -->
+  <script src="main.ai.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GraphAI - تمثيل الدوال</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+</head>
+<body>
+
+  <div class="container fadeInSlideDown">
+    <button id="qr-btn" title="الذهاب إلى صفحة QR" onclick="goToQR()">QR</button>
+     <!-- أضف الزر الجديد بجانب زر QR داخل نفس الـ container -->
+<button id="chat-btn" title="الذهاب إلى صفحة الدردشة" onclick="goToChat()">AI</button>
+    <div class="header">
+      <h2>GraphAI - تمثيل الدوال</h2>
+      <div id="user-greeting"></div>
+    </div>
+
+    <div id="auth-section">
+      <input type="email" id="email" placeholder="البريد الإلكتروني" autocomplete="username" />
+      <input type="password" id="password" placeholder="كلمة المرور" autocomplete="current-password" />
+      <div id="pass-requirements">كلمة المرور يجب أن تحتوي على 8 أحرف على الأقل، أرقام ونقاط</div>
+      <div id="captcha-container"></div>
+      <input type="text" id="captcha-input" placeholder="أدخل حروف الكابتشا هنا" autocomplete="off" />
+      <button id="auth-btn">دخول</button>
+      <button class="toggle-link" id="toggle-auth">إنشاء حساب جديد</button>
+    </div>
+
+    <div id="graph-section" style="display:none;">
+      <textarea id="function-input" placeholder="أدخل الدوال (كل دالة في سطر): مثال: 3x - 4"></textarea>
+      <button id="plot-btn">تمثيل الدوال</button>
+      <canvas id="graphCanvas"></canvas>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

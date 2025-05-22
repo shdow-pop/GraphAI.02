@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  user-select: none;
+}
+.container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background: rgba(0,0,0,0.35);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00eaff;
+}
+h1 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 0 0 10px #00eaff;
+}
+input {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+input:focus {
+  box-shadow: 0 0 8px #00eaff;
+}
+button {
+  padding: 12px 20px;
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s;
+  user-select: none;
+}
+button:hover {
+  background: #ff416c;
+}
+#qrcode {
+  margin-top: 30px;
+  display: inline-block;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00eaff;
+  max-width: 100%;
+  user-select: none;
+}
+.hidden {
+  display: none;
+}
+#instructions {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #a0eaff;
+  user-select: none;
+}

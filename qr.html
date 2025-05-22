@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>كود QR بدقة عالية مع حفظ ومشاركة</title>
+  <link rel="stylesheet" href="style.qr.css">
+</head>
+<body>
+  <div class="container">
+    <h1>أنشئ كود QR بدقة عالية</h1>
+    <input type="text" id="text" placeholder="أدخل نصًا هنا..." />
+    <br />
+    <button onclick="generateQR()">توليد الكود</button>
+    <button id="shareBtn" class="hidden" onclick="shareQR()">مشاركة كود QR</button>
+    <div id="qrcode" class="hidden" title="اضغط ضغطة طويلة لحفظ الصورة"></div>
+    <div id="instructions" class="hidden">اضغط ضغطة طويلة على الكود لحفظ الصورة.</div>
+  </div>
+
+  <script src="main.qr.js"></script>
+</body>
+</html>
